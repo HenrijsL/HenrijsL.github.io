@@ -23,7 +23,79 @@ gpxFiles = [
         "file": "ValmieraNovads25.gpx",
         "color": "orange"
     },
+    {
+        "name": "Tukuma novads",
+        "file": "TukumaNovads35.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1vnCrKQyn5GcmnsYKpNUdQLO9SJWDJbZA?usp=sharing"
+    },
+    {
+        "file": "TukumaNovads27.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Limbažu novads",
+        "file": "LimbazuNovads34.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1c4WqRQSGvLVMPSEJ3y2CUz0CgyG4Gbvm?usp=sharing"
+    },
+    {
+        "file": "LimbazuNovads28.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Bauskas novads",
+        "file": "BauskasNovads35.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1PQh8eih2pCgpUWpF-OA6N6J8g9Gt_viH?usp=sharing"
+    },
+    {
+        "file": "BauskasNovads24.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Mārupes novads",
+        "file": "MarupesNovads32.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1e_ir0mFYS0ngU-bJDhErtWMoU10WNMWB?usp=sharing"
+    },
+    {
+        "file": "MarupesNovads22.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Jelgava",
+        "file": "Jelgava22.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1SWh3PFD-ljJqOaQUEZgy4lc3HaIr5jWS?usp=sharing"
+    },
+    {
+        "file": "Jelgava14.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Salaspils novads",
+        "file": "SalaspilsNovads27.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1Wn0YGf0pwEF4wZNWJU6Ekbv78IqILAJ1?usp=sharing"
+    },
+    {
+        "file": "SalaspilsNovads18.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Ropažu novads",
+        "file": "RopazuNovads30.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1xHNU776wfjLf1F3z1BR1PapesAxiHdEk?usp=sharing"
+    },
+    {
+        "file": "RopazuNovads18.gpx",
+        "color": "orange"
+    },
 ]
+
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
 def process_gpx_to_df(file_name):
     gpx = gpxpy.parse(open(file_name)) 
@@ -37,8 +109,6 @@ def process_gpx_to_df(file_name):
     return points
 
 map = folium.Map(location=(56.9, 24.5), zoom_start=8)
-
-__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
 for gpx in gpxFiles:
     points = process_gpx_to_df(os.path.join(__location__, "gpx/" + gpx["file"]))
