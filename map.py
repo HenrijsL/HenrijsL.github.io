@@ -1,6 +1,7 @@
 import folium
 import gpxpy
 import os
+#import geojson
 
 gpxFiles = [
     {
@@ -93,6 +94,21 @@ gpxFiles = [
         "file": "RopazuNovads18.gpx",
         "color": "orange"
     },
+        {
+        "name": "Jūrmala",
+        "file": "JurmalaPlanotais23.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1IRUWyVSBc3QTgcyLY7JVI9apY7wtpGXg?usp=sharing",
+        "description": "Pateicoties Latvijas ziemai tika veikts cits maršruts, veiktais maršruts ir dzeltenā krāsā."
+    },
+    {
+        "file": "JurmalaPlanotais18.gpx",
+        "color": "orange"
+    },
+        {
+        "file": "JurmalaRealais22.gpx",
+        "color": "yellow"
+    },
 ]
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
@@ -110,12 +126,18 @@ def process_gpx_to_df(file_name):
 
 map = folium.Map(location=(56.9, 24.5), zoom_start=8)
 
+#with open(os.path.join(__location__, "novadi.geojson")) as f:
+    #gj = json.load(f)
+    
+#folium.GeoJson(gj).add_to(map)
+
 for gpx in gpxFiles:
     points = process_gpx_to_df(os.path.join(__location__, "gpx/" + gpx["file"]))
     folium.PolyLine(points, color=gpx["color"], weight=4.5, opacity=1).add_to(map)
 
     if "name" in gpx and "gpx_url" in gpx:
-        html = "<div><h5>" + gpx["name"] + "</h5><a href='" + gpx["gpx_url"] + "' target='_blank'>GPX faili</a></div>"
+        description = f"<p>{gpx['description']}</p>" if "description" in gpx else ""
+        html = f"<div><h5>{gpx['name']}</h5><a href='{gpx['gpx_url']}' target='_blank'>GPX faili</a>{description}</div>"
         popup = folium.Popup(html, max_width=300)
         tooltip = "<h6>" + gpx["name"] + "</h6>"
         folium.Marker(points[0], tooltip=tooltip,popup=popup,icon=folium.Icon(color='green', icon='circle', icon_color='white', prefix='fa')).add_to(map)
