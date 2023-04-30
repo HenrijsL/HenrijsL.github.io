@@ -94,7 +94,7 @@ gpxFiles = [
         "file": "RopazuNovads18.gpx",
         "color": "orange"
     },
-        {
+    {
         "name": "Jūrmala",
         "file": "JurmalaPlanotais23.gpx",
         "color": "red",
@@ -108,6 +108,12 @@ gpxFiles = [
         {
         "file": "JurmalaRealais22.gpx",
         "color": "yellow"
+    },
+    {
+        "name": "Cēsu novads",
+        "file": "CesuNovads31.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1U5bARpzS2TWvD97Qb2RBt-8IOCiElxED?usp=sharing"
     },
 ]
 
