@@ -115,6 +115,34 @@ gpxFiles = [
         "color": "red",
         "gpx_url": "https://drive.google.com/drive/folders/1U5bARpzS2TWvD97Qb2RBt-8IOCiElxED?usp=sharing"
     },
+    {
+        "name": "Rēzekne",
+        "file": "Rezekne_25km.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1UJAi_m9I3XJ0Z7JmDvoDZHnzMLiXC7YI?usp=sharing"
+    },
+    {
+        "file": "Rezekne_20km.gpx",
+        "color": "orange"
+    },
+    {
+        "file": "Rezekne_15km.gpx",
+        "color": "yellow"
+    },
+    {
+        "file": "33km_Rezeknes_novads_ILN.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Rēzeknes novads",
+        "file": "37km_Rezeknes_novads_ILN.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1UJAi_m9I3XJ0Z7JmDvoDZHnzMLiXC7YI?usp=sharing"
+    },
+    {
+        "file": "20km_Rezeknes_novads_ILN.gpx",
+        "color": "yellow"
+    },
 ]
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
