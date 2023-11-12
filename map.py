@@ -143,6 +143,20 @@ gpxFiles = [
         "file": "20km_Rezeknes_novads_ILN.gpx",
         "color": "yellow"
     },
+        {
+        "name": "Dobeles novads",
+        "file": "ILN_Dobeles_novads_37km.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1FIKcqC45QMsZpah4lD4ag9pvqg8xRgzp?usp=sharing"
+    },
+    {
+        "file": "ILN_Dobeles_novads_26km.gpx",
+        "color": "orange"
+    },
+    {
+        "file": "ILN_Dobeles_novads_10km.gpx",
+        "color": "yellow"
+    },
 ]
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
