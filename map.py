@@ -1,7 +1,6 @@
 import folium
 import gpxpy
 import os
-#import geojson
 
 gpxFiles = [
     {
@@ -143,7 +142,7 @@ gpxFiles = [
         "file": "20km_Rezeknes_novads_ILN.gpx",
         "color": "yellow"
     },
-        {
+    {
         "name": "Dobeles novads",
         "file": "ILN_Dobeles_novads_37km.gpx",
         "color": "red",
@@ -155,6 +154,20 @@ gpxFiles = [
     },
     {
         "file": "ILN_Dobeles_novads_10km.gpx",
+        "color": "yellow"
+    },
+        {
+        "name": "Valkas novads",
+        "file": "ILN_Valkas_novads_35km.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1ZgUjN46jlWOrbawspFkVIgD37llCSvb6?usp=sharing"
+    },
+    {
+        "file": "ILN_Valkas_novads_13km.gpx",
+        "color": "orange"
+    },
+    {
+        "file": "ILN_Valkas_novads_12km.gpx",
         "color": "yellow"
     },
 ]
