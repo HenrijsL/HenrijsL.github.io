@@ -156,7 +156,7 @@ gpxFiles = [
         "file": "ILN_Dobeles_novads_10km.gpx",
         "color": "yellow"
     },
-        {
+    {
         "name": "Valkas novads",
         "file": "ILN_Valkas_novads_35km.gpx",
         "color": "red",
@@ -169,6 +169,16 @@ gpxFiles = [
     {
         "file": "ILN_Valkas_novads_12km.gpx",
         "color": "yellow"
+    },
+    {
+        "name": "Kuldīgas novads",
+        "file": "ILN_Kuldīgas_novads_36km.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/1C9CNFAyLtFux74XJbD8wd258qYOyqxC9?usp=sharing"
+    },
+    {
+        "file": "ILN_Kuldīgas_novads_23km.gpx",
+        "color": "orange"
     },
 ]
 
