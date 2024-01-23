@@ -180,6 +180,20 @@ gpxFiles = [
         "file": "ILN_Kuldīgas_novads_23km.gpx",
         "color": "orange"
     },
+    {
+        "name": "Ādažu novads",
+        "file": "ILN_Adazu_novads_40km.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/14BHiEzPtNgIbswpgpSwp2u6RKVy8x8cR?usp=sharing"
+    },
+    {
+        "file": "ILN_Adazu_novads_25km.gpx",
+        "color": "orange"
+    },
+    {
+        "file": "ILN_Adazu_novads_16km.gpx",
+        "color": "yellow"
+    },
 ]
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
