@@ -194,6 +194,56 @@ gpxFiles = [
         "file": "ILN_Adazu_novads_16km.gpx",
         "color": "yellow"
     },
+        {
+        "name": "Ogres novads",
+        "file": "Ogres_Novads_34km.gpx",
+        "color": "red",
+        "gpx_url": "https://drive.google.com/drive/folders/14YsZtbkpZHIe5Y7ij8zlHOHBNr0jsTDr?usp=sharing"
+    },
+    {
+        "file": "Ogres_Novads_14km.gpx",
+        "color": "orange"
+    },
+    {
+        "name": "Krāslavas novads",
+        "file": "Kraslavas_novads_10km.gpx",
+        "color": "green",
+        "gpx_url": "https://drive.google.com/drive/folders/1JMhByM7G2w6sqTU5Rty6KQ7Lew7qqbEn?usp=sharing"
+    },
+    {
+        "file": "Kraslavas_novads_25km.gpx",
+        "color": "orange"
+    },
+    {
+        "file": "Kraslavas_novads_23km.gpx",
+        "color": "yellow"
+    },
+    {
+        "file": "Kraslavas_novads_15km.gpx",
+        "color": "blue"
+    },
+        {
+        "file": "Kraslavas_novads_30km.gpx",
+        "color": "red"
+    },
+        {
+        "name": "Preiļu novads",
+        "file": "Preilu_novads_13km.gpx",
+        "color": "green",
+        "gpx_url": "https://drive.google.com/drive/folders/1qVOGh8Glxq6NtU96dDpULIKNTZMBosAw?usp=sharing"
+    },
+    {
+        "file": "Preilu_novads_25km.gpx",
+        "color": "orange"
+    },
+    {
+        "file": "Preilu_novads_16km.gpx",
+        "color": "yellow"
+    },
+    {
+        "file": "Preilu_novads_33km.gpx",
+        "color": "red"
+    },
 ]
 
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
